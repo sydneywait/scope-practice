@@ -85,12 +85,15 @@ const llamaNamer = function () {
     const namer = function () {
         const suffix = " the Llama"
         const name = possibleNames[randomizer]
+        //console log to check 
         console.log("this is the random name", name);
-        //return the name and suffix
+        //return the name and suffix to be used outside namer()
         return name + suffix
     }
-//call the function "namer" and catch the name and suffix
+//call the function "namer" and catch the name and suffix to be used outside namer()
 randomNameString = namer()
+
+//console log to check
 console.log("this is the random name string", randomNameString)
 //return the randomNameString from the function so it is available outside namer(), inside llamaNamer()
 return randomNameString;
